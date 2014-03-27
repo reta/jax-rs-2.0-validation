@@ -1,104 +1,104 @@
 <project 
-	xmlns="http://maven.apache.org/POM/4.0.0" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.example</groupId>
-	<artifactId>jaxrs-2.0-validation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <groupId>com.example</groupId>
+    <artifactId>jaxrs-2.0-validation</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.apache.cxf.version>3.0.0-milestone2</org.apache.cxf.version>
-		<org.springframework.version>4.0.2.RELEASE</org.springframework.version>
-		<org.eclipse.jetty.version>9.1.3.v20140225</org.eclipse.jetty.version>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <org.apache.cxf.version>3.0.0-milestone2</org.apache.cxf.version>
+        <org.springframework.version>4.0.2.RELEASE</org.springframework.version>
+        <org.eclipse.jetty.version>9.1.3.v20140225</org.eclipse.jetty.version>
+    </properties>
 
-	<dependencies>			
-	    <dependency>
-      		<groupId>org.apache.cxf</groupId>
-      		<artifactId>cxf-rt-frontend-jaxrs</artifactId>
-      		<version>${org.apache.cxf.version}</version>
-   		</dependency>
-   		
-   		<dependency>
+    <dependencies>            
+        <dependency>
+              <groupId>org.apache.cxf</groupId>
+              <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+              <version>${org.apache.cxf.version}</version>
+           </dependency>
+           
+           <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-rs-client</artifactId>
             <version>${org.apache.cxf.version}</version>
         </dependency>
 
-	    <dependency>
-      		<groupId>javax.inject</groupId>
-      		<artifactId>javax.inject</artifactId>
-      		<version>1</version>
-   		</dependency>
+        <dependency>
+              <groupId>javax.inject</groupId>
+              <artifactId>javax.inject</artifactId>
+              <version>1</version>
+           </dependency>
 
-   		<dependency>
-		  	<groupId>com.fasterxml.jackson.jaxrs</groupId>
-		  	<artifactId>jackson-jaxrs-json-provider</artifactId>
-		  	<version>2.3.2</version>
-		</dependency>
-   		
-   		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-   			<artifactId>jackson-core</artifactId>
-   			<version>2.3.2</version>
-   		</dependency>
-   		
-		<dependency>
+           <dependency>
+              <groupId>com.fasterxml.jackson.jaxrs</groupId>
+              <artifactId>jackson-jaxrs-json-provider</artifactId>
+              <version>2.3.2</version>
+        </dependency>
+           
+           <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+               <artifactId>jackson-core</artifactId>
+               <version>2.3.2</version>
+           </dependency>
+           
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
             <version>${org.springframework.version}</version>
         </dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${org.springframework.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${org.springframework.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${org.springframework.version}</version>
-		</dependency>
-						
-		<dependency>
-		    <groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-server</artifactId>
-			<version>${org.eclipse.jetty.version}</version>		   		   
-		</dependency>
-					
-		<dependency>
-		    <groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-webapp</artifactId>
-			<version>${org.eclipse.jetty.version}</version>		   		   
-		</dependency>		
-		
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>5.1.0.Final</version>			
-		</dependency>
-		
-		<dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+                        
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${org.eclipse.jetty.version}</version>                      
+        </dependency>
+                    
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${org.eclipse.jetty.version}</version>                      
+        </dependency>        
+        
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.0.Final</version>            
+        </dependency>
+        
+        <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.el</artifactId>
             <version>3.0.0</version>
         </dependency>
-	</dependencies>
+    </dependencies>
 
-	<build>
-		<plugins>
- 			<plugin>
+    <build>
+        <plugins>
+             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0</version>
@@ -106,53 +106,53 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
-            </plugin>		
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.example.ServerStarter</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-						<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>1.6</version>
-				<configuration>
-			        <filters>
-			            <filter>
-			                <artifact>*:*</artifact>
-			                <excludes>
-			                    <exclude>META-INF/*.SF</exclude>
-			                    <exclude>META-INF/*.DSA</exclude>
-			                    <exclude>META-INF/*.RSA</exclude>
-			                </excludes>
-			            </filter>
-			        </filters>
-	    		</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.example.ServerStarter</mainClass>
-								</transformer>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-									<resource>META-INF/cxf/bus-extensions.txt</resource>
-								</transformer>
-							</transformers>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>	
+            </plugin>        
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.example.ServerStarter</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+                        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>1.6</version>
+                <configuration>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.example.ServerStarter</mainClass>
+                                </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/cxf/bus-extensions.txt</resource>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>    
 </project>
