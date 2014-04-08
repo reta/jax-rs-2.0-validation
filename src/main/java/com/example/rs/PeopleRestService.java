@@ -2,7 +2,6 @@ package com.example.rs;
 
 import java.util.Collection;
 
-import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -27,7 +26,11 @@ import com.example.services.PeopleService;
 
 @Path( "/people" ) 
 public class PeopleRestService {
-    @Inject private PeopleService peopleService;
+    private final PeopleService peopleService;
+    
+    public PeopleRestService( final PeopleService peopleService ) {
+		this.peopleService = peopleService;
+	}
     
     @Produces( { MediaType.APPLICATION_JSON } )
     @GET

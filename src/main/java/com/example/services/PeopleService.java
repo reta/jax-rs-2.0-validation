@@ -5,13 +5,10 @@ import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import org.springframework.stereotype.Service;
-
 import com.example.exceptions.PersonAlreadyExistsException;
 import com.example.exceptions.PersonNotFoundException;
 import com.example.model.Person;
 
-@Service
 public class PeopleService {
     private final ConcurrentMap< String, Person > persons = new ConcurrentHashMap< String, Person >(); 
         
